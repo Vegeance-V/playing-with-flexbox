@@ -1,18 +1,67 @@
+* {
+    background-color: black;
+}
+
 form {
+    border: solid white;
     display: flex;
+    justify-content: center;
     align-items: flex-end;
+    flex-basis: 400px;
     flex-wrap: wrap;
+    margin: 20px;
     gap: 16px;
-  }
-  .name {
+}
+
+.name {
     flex-grow: 1;
+    color: white;
+    background-color: rgb(61, 62, 66);
+    /*border: 2px solid rgb(234, 234, 234);*/
     flex-basis: 160px;
-  }
-  .email {
+    align-self: stretch;
+}
+
+.email {
     flex-grow: 3;
+    color: white;
+    background-color: rgb(61, 62, 66);
+    /*border: 2px solid rgb(234, 234, 234);*/
     flex-basis: 200px;
-  }
-  button {
+    align-self: stretch;
+}
+
+button {
+    align-self: stretch;
+    color: white;
     flex-grow: 1;
     flex-basis: 80px;
-  }
+}
+
+.bigbox {
+    border: solid palevioletred;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+    height: 500px;
+    padding: 10px;
+    gap: 50px;
+    flex: 1 1 auto;
+}
+
+.smallbox {
+    border: 2px solid rgb(112, 135, 216);
+    background-color: rgb(116, 100, 255);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 80px;
+    flex: 1 1 auto;
+}
+
+.uniquebox {
+    justify-content: flex-start;
+    align-self: flex-end;
+    border: 2px solid rgb(0, 44, 203);
+}
